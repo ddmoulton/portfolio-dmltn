@@ -1,0 +1,29 @@
+/* 
+    Document   : bebas-fonts
+    Created on : Feb 7, 2014, 10:37:50 PM
+    Author     : Danny
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+@font-face {
+    font-family: bebas;
+    src: url('../fonts/BebasNeueRegular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: bebasBold;
+    src: url(../fonts/BebasNeueBold.otf);
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: bebasLight;
+    src: url(../fonts/BebasNeueLight.otf);
+}
+@font-face {
+    font-family: bebasThin;
+    src: url(../fonts/BebasNeueThin.otf);
+    
+}

@@ -1,0 +1,72 @@
+/* 
+    Document   : style
+    Created on : Nov 1, 2013, 9:54:41 AM
+    Author     : dmoulton
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body {
+}
+#splash-wrap {
+    margin-top: -20px;
+    padding-top:20px;
+    padding-bottom:20px;
+    background-color: #3D9970;
+}
+.splash, .btn-wrap {
+    text-align: center;
+}
+h1.splash {
+    font-size: 7em;
+    font-family: bebas;
+}
+h4.splash {
+    font-size: 3.5em;
+    font-family: bebasLight;
+
+}
+.modal {
+    text-align: left;
+}
+
+.splash {
+    color: #fff;
+}
+.big h2 {
+    font-family: bebas;
+    font-size: 2.5em;
+}
+.feature i, .big h1, .big h2, .big h3, .big h4, .big h5, .big h6 {
+    display: block;
+    text-align: center;
+}
+.feature i {
+    font-size: 8em;
+}
+.feature h4 {
+
+}
+.feature h4:after {
+    content: "";
+    height: 1px;
+    background: -moz-linear-gradient(left,  rgba(0,0,0,0) 20%, rgba(147,147,147,1) 50%, rgba(0,0,0,0) 80%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(20%,rgba(0,0,0,0)), color-stop(50%,rgba(147,147,147,1)), color-stop(80%,rgba(0,0,0,0)));
+    background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 20%,rgba(147,147,147,1) 50%,rgba(0,0,0,0) 80%);
+    background: -o-linear-gradient(left,  rgba(0,0,0,0) 20%,rgba(147,147,147,1) 50%,rgba(0,0,0,0) 80%);
+    background: -ms-linear-gradient(left,  rgba(0,0,0,0) 20%,rgba(147,147,147,1) 50%,rgba(0,0,0,0) 80%);
+    background: linear-gradient(to right,  rgba(0,0,0,0) 20%,rgba(147,147,147,1) 50%,rgba(0,0,0,0) 80%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=1 );
+
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.feature p {
+    font-size: 1em;
+}
+
+.btn-contact { 
+    font-family: bebas;
+    font-size: 20px;
+}
