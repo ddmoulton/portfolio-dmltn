@@ -1,0 +1,91 @@
+/* 
+    Document   : style
+    Created on : Nov 1, 2013, 9:54:41 AM
+    Author     : dmoulton
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+/* Colors */
+@splash-bg: rgb(61, 153, 112);
+@border-gradient-middle: rgba(147,147,147,1);
+
+/* Fonts */
+@splash-font: bebas;
+@splash-font-color: rgb(255, 255, 255);
+@splash-font-size: 7em;
+
+@splash-font-light: bebasLight;
+@splash-font-light-size: (@splash-font-size / 2);
+
+@btn-font: @splash-font;
+@btn-font-size: 1.75em;
+
+@feature-icon-size: 8em;
+
+
+.gradient-border() {
+   &:after {
+        content: "";
+        height: 1px;
+        background: -moz-linear-gradient(left,  rgba(0,0,0,0) 20%, @border-gradient-middle 50%, rgba(0,0,0,0) 80%);
+        background: -webkit-gradient(linear, left top, right top, color-stop(20%,rgba(0,0,0,0)), color-stop(50%,@border-gradient-middle), color-stop(80%,rgba(0,0,0,0)));
+        background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 20%,@border-gradient-middle 50%,rgba(0,0,0,0) 80%);
+        background: -o-linear-gradient(left,  rgba(0,0,0,0) 20%,@border-gradient-middle 50%,rgba(0,0,0,0) 80%);
+        background: -ms-linear-gradient(left,  rgba(0,0,0,0) 20%,@border-gradient-middle 50%,rgba(0,0,0,0) 80%);
+        background: linear-gradient(to right,  rgba(0,0,0,0) 20%,@border-gradient-middle 50%,rgba(0,0,0,0) 80%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=1 );
+        display: block;
+        margin-bottom: 10px;
+        margin-top: 10px;
+   }
+}
+.center() {
+    text-align: center;
+}
+
+#splash-wrap {
+    margin-top: -20px;
+    padding-top:20px;
+    padding-bottom:20px;
+    background-color: @splash-bg;
+}
+.splash, .btn-wrap {
+    .center();
+}
+h1.splash {
+    font-size: @splash-font-size;
+    font-family: @splash-font;
+}
+h4.splash {
+    font-size: @splash-font-light-size;
+    font-family: @splash-font-light;
+
+}
+.modal {
+    text-align: left;
+}
+
+.splash {
+    color: @splash-font-color;
+}
+.big h2 {
+    font-family: @splash-font;
+    font-size: 2.5em;
+}
+.feature i, .big h1, .big h2, .big h3, .big h4, .big h5, .big h6 {
+    display: block;
+    .center();
+}
+.feature i {
+    font-size: @feature-icon-size;
+}
+.feature h4 {
+    .gradient-border();
+}
+
+.btn-contact { 
+    font-family: @splash-font;
+    font-size: @btn-font-size;
+}
